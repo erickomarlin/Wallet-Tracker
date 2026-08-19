@@ -1,6 +1,6 @@
 import type { Transaction } from "../types/Transaction";
 
-const API_URL = "http://localhost:5000/api/transactions";
+const API_URL = "https://wallet-tracker-1xu5.onrender.com/api/transactions";
 
 export async function getTransactions(): Promise<Transaction[]> {
   const res = await fetch(API_URL);
